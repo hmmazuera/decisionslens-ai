@@ -4,15 +4,18 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 from prompts import DECISION_ANALYSIS_PROMPT
+import streamlit as st
 
 load_dotenv()
 
 def create_openrouter_client():
-    api_key = os.getenv('OPENROUTER_API')
-
-    client = OpenAI(base_url='https://openrouter.ai/api/v1',
-                    api_key=api_key)
-    return client
+    api_key = os.getenv("OPENROUTER_API_KEY")
+    if not api_key:
+        api_key = st.secrets["OPENROUTER_API_KEY"]
+    return OpenAI(
+        base_url="https://openrouter.ai/api/v1",
+        api_key=api_key
+    )
 
 def load_model():
     model = joblib.load(MODEL_PATH)
