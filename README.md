@@ -88,6 +88,11 @@ The dataset was divided into:
 
 ---
 
+![Application](images/home.png)
+![Prediction](images/decision.png)
+![Decision](images/prediction.png)
+![Reflection](images/reflection.png)
+
 # Project Structure
 
 ```
@@ -288,10 +293,6 @@ The project demonstrates an end-to-end NLP workflow including data preprocessing
 
 **Mauricio Mazuera**
 
-GitHub:
+GitHub:https://github.com/hmmazuera/decisionlens-ai
 
-https://github.com/hmmazuera/decisionlens-ai
-
-LinkedIn:
-
-https://www.linkedin.com/in/mauricio-mazuera-a0a7a933b
+LinkedIn:https://www.linkedin.com/in/mauricio-mazuera-a0a7a933b
